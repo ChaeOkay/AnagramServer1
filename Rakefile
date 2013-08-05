@@ -126,4 +126,5 @@ end
 desc "Run the specs"
 RSpec::Core::RakeTask.new(:spec)
 
+#changed "specs" to "spec"
 task :default  => :spec

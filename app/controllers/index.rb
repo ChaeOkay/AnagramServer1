@@ -1,4 +1,4 @@
-get '/' do
-  # Look in app/views/index.erb
+get '/:word' do
+  @input_word = params[:word]
   erb :index
 end
