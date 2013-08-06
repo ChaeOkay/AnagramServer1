@@ -1,3 +1,5 @@
+# anagram submitted by post rather than uri
+
 get '/' do
 
   erb :index
