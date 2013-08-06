@@ -20,7 +20,7 @@ describe Word do
     let(:db_word) { Word.find(random_id) }
 
     it "should have sorted chars that are correct" do
-      db_word.sorted_chars.should == db_word.value.strip.downcase.split('').sort
+      db_word.sorted_chars.should == db_word.value.strip.downcase.split('').sort.join
     end
   end
 
