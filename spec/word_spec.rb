@@ -25,7 +25,11 @@ describe Word do
   end
 
   context "detecting anagrams" do
+    input_word = "dog"
+    let(:anagrams){ Word.anagrams(input_word) }
+
     it "should return correct number of anagrams" do
+      anagrams.size.should == 3
     end
   end
 
