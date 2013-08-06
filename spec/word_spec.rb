@@ -24,4 +24,9 @@ describe Word do
     end
   end
 
+  context "detecting anagrams" do
+    it "should return correct number of anagrams" do
+    end
+  end
+
 end
