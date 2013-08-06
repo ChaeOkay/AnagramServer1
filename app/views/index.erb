@@ -4,18 +4,18 @@
   <% unless @anagrams.nil? %>
     <ul>
       <% @anagrams.each do |anagram| %>
-        <li><%= anagram %></li>
+        <li><%= anagram.value %></li>
       <% end %>
     </ul>
   <% end %>
 
 
   <div>
-    <form action="">
+    <form method="post" action="/word/anagrams/">
       <!-- action tells form data where to go after submit -->
       <label>Enter Anagram:</label>
       <br />
-      <input id="user_word" type=text></input>
+      <input name="user_word" type="text"></input>
       <br />
       <input type=submit value="Make Anagrams"></input>
     </form>
