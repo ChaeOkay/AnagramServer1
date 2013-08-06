@@ -1,5 +1,15 @@
 <div class="container">
   <h1>Hello, <%= @input_word %></h1>
+
+  <% unless @anagrams.nil? %>
+    <ul>
+      <% @anagrams.each do |anagram| %>
+        <li><%= anagram %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+
   <div>
     <form action="">
       <!-- action tells form data where to go after submit -->
